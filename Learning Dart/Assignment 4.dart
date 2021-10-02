@@ -1,18 +1,28 @@
 void main() {
   print("Question #1\n");
   print("SS is saved at: https://drive.google.com/file/d/1ZNpxEQVz_dzi40aGnVSaPhGjpO_Prht5/view?usp=sharing");
+  
   print("\nQuestion #2\n");
   Q2(7);
+  
   print("\nQuestion #3\n");
   Q3(2);
+  
   print("\nQuestion #4\n");
   Q4(["Hassan", "Zaheer", "Hyder"], [50, 70, 90]);
+  
   print("\nQuestion #5\n");
   Q5 q5=Q5();
   q5.ans("M.Hassan Zaheer");
+  
+  print("\nQuestion #6\n");
+  Q6c q6=Q6c();
+  q6.out();
+  
   print("\nQuestion #7\n");
   Q7 q7=Q7(name:"Hassan",age:21,education: "BSCS");
   q7.details();
+  
   print("\nQuestion #8\n");
   Q8 q8=Q8();
   q8.ans("M.Hassan Zaheer");
@@ -56,6 +66,20 @@ class Q5{
   var greet="Hellow";
   void ans(String name){
     print("$greet $name");
+  }
+}
+
+class Q6a{
+  var name="M.Hassan Zaheer";
+}
+class Q6b{
+  var ask="How are you?";
+}
+class Q6c{
+  void out(){
+    Q6a q6a=Q6a();
+    Q6b q6b=Q6b();
+    print("Hellow ${q6a.name} , ${q6b.ask}");
   }
 }
 
